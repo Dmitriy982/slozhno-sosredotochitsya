@@ -9,4 +9,129 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --title-decor: #FFF1F7;
+  --accent-color: #FF8DCB;
+  --back-image: url(/images/cover-image-light.png);
+  --header-tittle: #FFC2E6;
+  --card-color: #353430;
+  --header-tittle-high: #FF0070;
+  --hover: rgba(50, 49, 45, 0.40);
+  --border: #353430;
+  --header-text: #353430;
+  --header-menu: #353430;
+  --card-tittle: #353430; 
+  --card: #353430;
+  --display: none;
+}
+
+.page {
+  background-image: var(--back-image);
+  background-color: var(--title-decor);
+}
+
+.decorated-zone::after {
+  border-block-start: 1px solid var(--border);
+  border-inline-end: 1px solid var(--border);
+}
+
+.decorated-zone::before {
+  border-block-end: 1px solid var(--border);
+  border-inline-start: 1px solid var(--border);
+}
+
+.header_tittle {
+  color: var(--header-tittle);
+  text-shadow: 4px 4px 0px var(--header-tittle-high);
+}
+
+.header_text {
+  color: var(--header-text);
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu-list {
+  color: var(--header-menu);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--header-menu);
+  pointer-events: none;
+}
+
+.main__tittle {
+  color: var(--header-menu);
+}
+
+.card__tittle {
+  color: var(--card-tittle);
+  background-color: var(--accent-color);
+}
+
+.card__text {
+  color: var(--card);
+}
+
+.link {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.card__tittle__stretch {
+  color: var(--card-tittle);
+  background-color: var(--accent-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--card-color);
+}
+
+.link:focus {
+  outline: none;
+  border: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--card-color);
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--hover);
+}
+
+.header__theme-menu-item:focus {
+  outline: none;
+  border: none;
+}
+
+.header__theme-menu-item:focus-visible {
+  border-bottom: 1px solid var(--header-menu);
+}
+
+.page.theme_light .circle {
+  display: var(--display);
+}
+
+@media (width < 1024px) {
+  .header_tittle {
+    text-shadow: 4px 4px 0px var(--accent-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-decor: #FFF1F7;
+    --accent-color: #FF8DCB;
+    --back-image: url(/images/cover-image-light.png);
+    --header-tittle: #FFC2E6;
+    --card-color: #353430;
+    --header-tittle-high: #FF0070;
+    --hover: rgba(50, 49, 45, 0.40);
+    --border: #353430;
+    --header-text: #353430;
+    --header-menu: #353430;
+    --card-tittle: #353430; 
+    --card: #353430; 
+    --display: none;
+  }
+
 }

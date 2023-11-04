@@ -5,17 +5,16 @@
 :root {
   --title-decor: #000028;
   --accent-color: #ff0070;
-  --back-image: url(/images/cover-image-dark.png);
+  --back-image: url(../images/cover-image-dark.png);
   --header-tittle: #DB00FF;
   --card-color: #F1B2CE;
   --hover: rgba(255, 0, 112, 0.40);
   --display: block;
   --border: #ff0070;
-  --header-tittle-high: #DB00FF;
+  --header-tittle-high: #ff0070;
   --header-text: #000028;
   --header-menu: #ff0070;
   --card-tittle: #000028;
   --card: #F1B2CE;
-  --h1-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
